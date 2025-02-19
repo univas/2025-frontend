@@ -239,6 +239,16 @@ const somaNotas = notas.reduce((ant, atual) => {
 const media = somaNotas / parseFloat(notas.length)
 
 console.log("Média: "+ media.toFixed(2))
+// arrow function mais simplificada
+// const aprovados = notas.filter(nota => nota >= 7)
 
-const aprovados = notas.filter(nota => nota >= 7)
+// function
+// const aprovados = notas.filter(function(nota){
+//     return nota >= 7
+// })
+
+// arrow function completa
+const aprovados = notas.filter((nota) => {
+    return nota >= 7
+})
 console.log(aprovados)
