@@ -151,3 +151,94 @@ console.log(alunos, alunosTransformados)
  * 
  * 4. Montar um array de nomes e criar um novo array contendo todas as letras "a" trocadas por "b"
  */
+
+const array_numeros = [1,2,3,4,5,6,7,8,9]
+
+array_numeros.forEach(function(numero){
+    if(numero % 2 == 0){
+        console.log(numero)
+    }
+})
+
+function ehPrimo(numero){
+    let quantidade_divisores = 0
+    for(let i = 1; i <= numero; i++){
+        if(numero % i == 0){
+            quantidade_divisores++
+        }
+    }
+    if(quantidade_divisores == 2){
+        return true
+    }else{
+        return false
+    }
+}
+
+array_numeros.forEach(function(numero){
+    if(ehPrimo(numero)){
+        console.log(numero)
+    }
+})
+
+
+
+const array_nomes = [
+    "MARCOS", "ALEX", "JOSÉ", "FABRÍCIO", "TADEU", "LUCAS"
+]
+
+const novo_array_nomes = array_nomes.map(function(nome){
+    return nome.toLowerCase()
+})
+
+console.log(array_nomes, novo_array_nomes)
+
+
+const novo_array_trocado = array_nomes.map(function(nome){
+    return nome.replaceAll('A', 'B')
+})
+
+console.log(novo_array_trocado)
+
+
+
+
+const numeros_primos = 
+array_numeros.filter(function(numero){
+    return ehPrimo(numero)
+})
+
+const numeros_primos2 = array_numeros.filter(ehPrimo)
+
+console.log(numeros_primos)
+
+
+//reduce
+const somaReduce = array_numeros.reduce(function(anterior, atual){
+    return anterior + atual
+}, 0)
+
+console.log(somaReduce)
+
+
+
+/**
+ * 
+ * - Calcular a média da turma tendo o seguinte array
+ * [5,10,8.5,9,4,5.7]
+ * 
+ * - Criar um array com as notas aprovadas
+ * nota >= 7.0
+ */
+
+const notas = [5,10,8.5,9,4,5.7]
+
+const somaNotas = notas.reduce((ant, atual) => {
+    return ant + atual
+}, 0)
+
+const media = somaNotas / parseFloat(notas.length)
+
+console.log("Média: "+ media.toFixed(2))
+
+const aprovados = notas.filter(nota => nota >= 7)
+console.log(aprovados)
