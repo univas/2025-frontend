@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Seleção no DOM</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        header, section, footer { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        .destaque { color: blue; font-weight: bold; }
+        .importante { background-color: yellow; }
+        .danger { background-color: red; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo-principal">Bem-vindo à Página de Testes do DOM</h1>
+        <nav>
+            <ul id="menu">
+                <li class="item-menu"><a href="#">Início</a></li>
+                <li class="item-menu"><a href="#">Sobre</a></li>
+                <li class="item-menu"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introducao">
+        <h2 class="subtitulo">Introdução ao DOM</h2>
+        <p class="descricao">O DOM permite a manipulação de elementos HTML dinamicamente usando JavaScript.</p>
+    </section>
+
+    <section id="conteudo">
+        <h2 class="subtitulo">Lista de Itens</h2>
+        <ul id="lista-itens">
+            <li class="item">Item 1</li>
+            <li class="item destaque">Item 2</li>
+            <li class="item">Item 3</li>
+            <li class="item importante">Item 4</li>
+            <li class="item">Item 5</li>
+        </ul>
+    </section>
+
+    <section id="tabela">
+        <h2 class="subtitulo">Tabela de Produtos</h2>
+        <table id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="produto">
+                    <td class="produto-nome">Notebook</td>
+                    <td class="produto-preco">R$ 4.500</td>
+                    <td class="produto-estoque">5</td>
+                </tr>
+                <tr class="produto">
+                    <td class="produto-nome">Mouse</td>
+                    <td class="produto-preco">R$ 80</td>
+                    <td class="produto-estoque">20</td>
+                </tr>
+                <tr class="produto">
+                    <td class="produto-nome">Teclado</td>
+                    <td class="produto-preco">R$ 150</td>
+                    <td class="produto-estoque">15</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="qtd-total"></h2>
+    </section>
+
+    <section id="formulario">
+        <h2 class="subtitulo">Formulário de Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+            
+            <button type="submit" id="botao-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <section id="imagens">
+        <h2 class="subtitulo">Galeria de Imagens</h2>
+        <img src="" alt="Imagem 1" class="imagem">
+        <img src="" alt="Imagem 2" class="imagem destaque">
+        <img src="" alt="Imagem 3" class="imagem">
+    </section>
+
+    <footer>
+        <p id="rodape-texto">© 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Exemplo de manipulação: mudar a cor do título principal ao carregar a página
+        document.getElementById("titulo-principal").style.color = "red";
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
