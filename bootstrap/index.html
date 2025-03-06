@@ -1,99 +1,325 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Múltipla Escolha</title>
+    <!-- Incluindo o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body id="body">
 
-      <div>
-        <img class="rounded-circle" src="https://media.istockphoto.com/id/1198313244/pt/foto/square-frame-nature-landscape-with-lake-and-snow-capped-mountain-against-blue-sky-and-clouds.jpg?s=612x612&w=is&k=20&c=wGtx_R8FYfU-WYi2NLjYWfstLTvpMEHZtmsoLr8PWIg=" alt="...">
-      </div>
-    <h1 class="text-center text-danger">Hello, world!</h1>
-    <form class="mx-3">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Prova de conhecimento</h1>
+        
+        <form action="#" method="post">
+            <!-- Pergunta 1 -->
+            <fieldset class="mb-4">
+                <legend>1. Qual é a capital do Brasil?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                    <label class="form-check-label" for="q1a">
+                        São Paulo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                    <label class="form-check-label" for="q1b">
+                        Brasília
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                    <label class="form-check-label" for="q1c">
+                        Rio de Janeiro
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1d" value="d">
+                    <label class="form-check-label" for="q1d">
+                        Salvador
+                    </label>
+                </div>
+            </fieldset>
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+            <!-- Pergunta 2 -->
+            <fieldset class="mb-4">
+                <legend>2. Qual é o maior planeta do sistema solar?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                    <label class="form-check-label" for="q2a">
+                        Terra
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                    <label class="form-check-label" for="q2b">
+                        Júpiter
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                    <label class="form-check-label" for="q2c">
+                        Saturno
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2d" value="d">
+                    <label class="form-check-label" for="q2d">
+                        Marte
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 3 -->
+            <fieldset class="mb-4">
+                <legend>3. Quem escreveu "Dom Casmurro"?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                    <label class="form-check-label" for="q3a">
+                        José de Alencar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                    <label class="form-check-label" for="q3b">
+                        Machado de Assis
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                    <label class="form-check-label" for="q3c">
+                        Clarice Lispector
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3d" value="d">
+                    <label class="form-check-label" for="q3d">
+                        Lima Barreto
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 4 -->
+            <fieldset class="mb-4">
+                <legend>4. Qual é a fórmula química da água?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                    <label class="form-check-label" for="q4a">
+                        CO2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                    <label class="form-check-label" for="q4b">
+                        H2O
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                    <label class="form-check-label" for="q4c">
+                        O2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" id="q4d" value="d">
+                    <label class="form-check-label" for="q4d">
+                        H2O2
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 5 -->
+            <fieldset class="mb-4">
+                <legend>5. Em que continente está localizado o Egito?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                    <label class="form-check-label" for="q5a">
+                        África
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                    <label class="form-check-label" for="q5b">
+                        Ásia
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                    <label class="form-check-label" for="q5c">
+                        Europa
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" id="q5d" value="d">
+                    <label class="form-check-label" for="q5d">
+                        América
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 6 -->
+            <fieldset class="mb-4">
+                <legend>6. Quem pintou a Mona Lisa?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                    <label class="form-check-label" for="q6a">
+                        Pablo Picasso
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                    <label class="form-check-label" for="q6b">
+                        Leonardo da Vinci
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                    <label class="form-check-label" for="q6c">
+                        Michelangelo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" id="q6d" value="d">
+                    <label class="form-check-label" for="q6d">
+                        Vincent van Gogh
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 7 -->
+            <fieldset class="mb-4">
+                <legend>7. Qual é o símbolo químico do Ouro?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                    <label class="form-check-label" for="q7a">
+                        Au
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                    <label class="form-check-label" for="q7b">
+                        Ag
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                    <label class="form-check-label" for="q7c">
+                        Hg
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" id="q7d" value="d">
+                    <label class="form-check-label" for="q7d">
+                        Fe
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 8 -->
+            <fieldset class="mb-4">
+                <legend>8. Qual é o maior oceano do mundo?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                    <label class="form-check-label" for="q8a">
+                        Atlântico
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                    <label class="form-check-label" for="q8b">
+                        Índico
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                    <label class="form-check-label" for="q8c">
+                        Ártico
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" id="q8d" value="d">
+                    <label class="form-check-label" for="q8d">
+                        Pacífico
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 9 -->
+            <fieldset class="mb-4">
+                <legend>9. Qual é o número atômico do Hidrogênio?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                    <label class="form-check-label" for="q9a">
+                        1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                    <label class="form-check-label" for="q9b">
+                        2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                    <label class="form-check-label" for="q9c">
+                        3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" id="q9d" value="d">
+                    <label class="form-check-label" for="q9d">
+                        4
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Pergunta 10 -->
+            <fieldset class="mb-4">
+                <legend>10. Qual é a moeda oficial dos Estados Unidos?</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                    <label class="form-check-label" for="q10a">
+                        Dólar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                    <label class="form-check-label" for="q10b">
+                        Euro
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" id="q10c" value="c">
+                    <label class="form-check-label" for="q10c">
+                        Peso
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" id="q10d" value="d">
+                    <label class="form-check-label" for="q10d">
+                        Libra
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Botão de envio -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="finalizarProva">Enviar</button>
+            </div>
+        </form>
+    </div>
+<script>
+    const body = document.getElementById("body")
+    const botao = document.getElementById("finalizarProva")
+    let disabled = false
+    body.addEventListener("mouseleave", function(){
+        if(!disabled){
+            alert("Você perdeu a prova!")
+        }
+        botao.setAttribute("disabled", true)
+        disabled = true
+    })
+</script>
+</body>
 </html>
