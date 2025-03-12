@@ -45,6 +45,18 @@
 
     <section id="tabela">
         <h2 class="subtitulo">Tabela de Produtos</h2>
+        <form action="" id="formulario-produto">
+            <label for="">Nome</label><br>
+            <input type="text" required id="nome" name="nome"><br>
+            
+            <label for="">Preço</label><br>
+            <input type="number" required min="0" step=".01" id="preco" name="preco"><br>
+            
+            <label for="">Estoque</label><br>
+            <input type="number" required min="0" step="1" id="estoque" name="estoque"><br>
+
+            <button type="submit" id="botao-adicionar">Adicionar</button>
+        </form>
         <table id="tabela-produtos">
             <thead>
                 <tr>
@@ -121,6 +133,7 @@
 
     <script src="index.js"></script>
     <script src="eventos.js"></script>
+    <script src="formulario.js"></script>
 
 </body>
 </html>
