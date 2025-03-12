@@ -1,0 +1,16 @@
+Criar um formulário de cadastro com os seguintes campos e suas características:
+
+    - Nome: mínimo de 05 caracteres e obrigatório. Placeholder com: Nome completo
+    - E-mail: e-mail deve ser válido. Placeholder com: E-mail válido.
+    - Senha: mínimo de 08 caracteres e obrigatório.
+
+Após os campos, deve ter dois botões:
+
+    - Enviar
+    - Limpar
+
+No botão enviar, deve ser printado no console (console.log) os dados inseridos nos campos pelo usuário.
+
+No botão limpar, você deve implementar a lógica para limpar todos os campos usando o id para enviar o valor ""(vazio) para o atributo value.
+
+Os dois botões devem ter o type como button para não possuirem comportamento padrão.

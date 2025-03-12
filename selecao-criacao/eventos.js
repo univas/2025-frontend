@@ -29,3 +29,34 @@ produtos.forEach(function(produto){
         calculaEstoqueTotalEMostraNaTela()
     })
 })
+
+const botoesMaisHTML = document.getElementsByClassName("botao-mais")
+
+const botoesMais = Array.from(botoesMaisHTML)
+botoesMais.forEach(function(botao){
+    botao.addEventListener("click", function(event){
+        const linha = event.target.closest("tr")
+        const td = linha.children[2]
+        
+        let valorAtual = parseInt(td.innerText)
+
+        td.innerText = ++valorAtual
+        calculaEstoqueTotalEMostraNaTela()
+    })
+})
+
+
+const botoesMenosHTML = document.getElementsByClassName("botao-menos")
+
+const botoesMenos = Array.from(botoesMenosHTML)
+botoesMenos.forEach(function(botao){
+    botao.addEventListener("click", function(event){
+        const linha = event.target.closest("tr")
+        const td = linha.children[2]
+        
+        let valorAtual = parseInt(td.innerText)
+
+        td.innerText = --valorAtual
+        calculaEstoqueTotalEMostraNaTela()
+    })
+})
