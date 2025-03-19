@@ -24,5 +24,9 @@ document.getElementById("form").addEventListener("submit", function(event){
 })
 
 document.getElementById("btnMascaraCPF").addEventListener("click", function(){
-    
+    const inputCPF = document.getElementById("cpf")
+
+    const regex = /\d{3}/g
+
+    inputCPF.value = inputCPF.value.replace(regex, "XXX")
 })
