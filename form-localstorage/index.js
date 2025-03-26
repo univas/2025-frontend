@@ -23,6 +23,9 @@ function atualizarListaDeTarefas(){
 
         const itemDaLista = document.createElement("li")
         itemDaLista.innerText = item
+        itemDaLista.addEventListener("dblclick", function(event){
+            removerItem(event.target.innerText)
+        })
 
         listaUl.appendChild(itemDaLista)
     })
@@ -44,3 +47,22 @@ document.getElementById("form").addEventListener("submit", function(event){
 
     atualizarListaDeTarefas()
 })
+
+function removerItem(itemParaExcluir){
+    // buscar a lista no local storage
+    const listaDeTarefas = localStorage.getItem("tarefas")
+    // converter pra objeto
+    const lista = JSON.parse(listaDeTarefas)
+
+    const novaLista = lista.filter(function(item) {
+        return item != itemParaExcluir
+    })
+
+    localStorage.setItem("tarefas", JSON.stringify(novaLista))
+
+    atualizarListaDeTarefas()
+}
+
+
+// Criar o evento de remover item da lista ao clicar duas vezes.
+// https://github.com/univas/2025-frontend
