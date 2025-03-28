@@ -1,0 +1,19 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Marcos",
+      "login": "marcosantonio"
+    },
+    {
+      "id": "2",
+      "nome": "João",
+      "login": "JoaoVitor"
+    },
+    {
+      "nome": "José Alterado",
+      "login": "joseunivas",
+      "id": "5da3"
+    }
+  ]
+}
