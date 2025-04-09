@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table *{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .erro{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animais</h1>
+
+    <form action="" id="form">
+        <div>
+            <label for="">Nome</label>
+            <input type="text" id="nome">
+            <span class="erro" id="nomeErro"></span>
+        </div>
+        <div>
+            <label for="">Patas</label>
+            <input type="number" id="patas">
+            <span class="erro" id="patasErro"></span>
+        </div>
+        <div>
+            <label for="">País</label>
+            <input type="text" id="pais">
+            <span class="erro" id="paisErro"></span>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Patas</th>
+                <th>País</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="animais">
+            
+        </tbody>
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+</html>
