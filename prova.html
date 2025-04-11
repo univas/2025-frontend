@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação Prática - Cadastro</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button { margin: 5px 0; display: block; }
+    .erro { color: red; font-size: 0.9em; }
+    table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Cadastro de Usuários</h1>
+
+  <form id="formCadastro">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome">
+    <span class="erro" id="erroNome"></span>
+
+    <label for="email">E-mail:</label>
+    <input type="text" id="email">
+    <span class="erro" id="erroEmail"></span>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf">
+    <span class="erro" id="erroCPF"></span>
+
+    <label for="nascimento">Data de Nascimento:</label>
+    <input type="date" id="nascimento">
+    <span class="erro" id="erroNascimento"></span>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <h2>Usuários Cadastrados</h2>
+  <table id="tabelaUsuarios">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>CPF</th>
+        <th>Data de Nascimento</th>
+        <!-- <th>Ações</th> -->
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    // O aluno deve implementar o código aqui
+  </script>
+
+</body>
+</html>
